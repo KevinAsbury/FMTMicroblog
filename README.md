@@ -2,21 +2,21 @@
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
 ## Environement setup
-Make sure you have python3 installed.
-Create a virtual environment (linux, MacOS, & WSL):
+Make sure you have python3 and Pipenv installed.
+Use pipenv to install dependencies.
 '''
 cd microblog
-python3 venv venv
-source venv/bin/activate
-pip install Flask
-pip install Flask-WTF
+Pipenv shell
 '''
 
 ## Runnng the microblog
+Debug mode is optional:
 ```
 cd microblog
-source venv/bin/activate
+pipenv shell
 export FLASK_APP=microblog.py
-export SECRET_KEY='6KeGb8GFX3ASx9H9M8DB'
+export SECRET_KEY='TheKeyThatMustNotBeNamed'
+export SQLALCHEMY_DATABASE_URI='postgresql://postgres:postgres@localhost:5432/fmtmicroblog'
+export FLASK_DEBUG=true
 flask run
 ```
