@@ -11,7 +11,7 @@ cd microblog
 Pipenv shell
 createdb fmtmicroblog
 flask db init
-flask db migrate
+flask db upgrade
 ```
 
 ## Runnng the microblog
