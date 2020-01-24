@@ -8,7 +8,7 @@ If using Postgres then create the database. No need to do this if you prefer SQL
 ```
 git clone https://github.com/KevinAsbury/FMTMicroblog.git
 cd microblog
-Pipenv shell
+pipenv shell
 createdb fmtmicroblog
 flask db init
 flask db migrate
