@@ -49,3 +49,4 @@ venv.bak/
 
 # Custom
 /push.py
+*.lock
