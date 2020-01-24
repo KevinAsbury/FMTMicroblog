@@ -1,16 +1,8 @@
 from app import app
+from flask import render_template, url_for
 
 @app.route('/')
 @app.route('/index')
 def index():
     user = {'username': 'Kevin'} # Mock user
-    # Mock html page
-    return '''
-        <html>
-            <head>
-            <body>
-                <h1>Hello, ''' + user['username'] +  '''!</h1>
-            </body>
-            </head>
-        </html>
-    '''
+    return render_template('index.html', title='Home', user=user)
