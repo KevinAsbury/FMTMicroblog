@@ -10,7 +10,6 @@ git clone https://github.com/KevinAsbury/FMTMicroblog.git
 cd microblog
 Pipenv shell
 createdb fmtmicroblog
-flask db init
 flask db upgrade
 ```
 
